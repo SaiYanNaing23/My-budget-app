@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Category from './modules/Category'
 import Income from './modules/Income';
+import Expense from './modules/Expense';
 // import { createStore } from "vuex";
 import createPersistedState from "vuex-persistedstate";
 Vue.use(Vuex)
@@ -12,5 +13,5 @@ export default new Vuex.Store({
      key : "myBudge",
     }),
   ],
-  modules: {Category,Income}
+  modules: {Category,Income,Expense}
 })
