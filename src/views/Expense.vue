@@ -15,7 +15,7 @@
         :key="index">
       <v-list-item class="mt-2">
         <v-list-item-content>
-          <v-list-item-title>{{expense.amount}}</v-list-item-title>
+          <v-list-item-title>{{Number(expense.amount).toLocaleString()}}</v-list-item-title>
           <v-list-item-subtitle>{{expense.category}}</v-list-item-subtitle>
         </v-list-item-content>
 
